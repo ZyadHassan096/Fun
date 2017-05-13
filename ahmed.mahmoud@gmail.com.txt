@@ -1,0 +1,2 @@
+Addition	1200
+Multiplication	300

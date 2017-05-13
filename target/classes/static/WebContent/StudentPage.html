@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="phase2">
+
+<head>
+<title>Student Page</title>
+<script>document.write('<base href="' + document.location + '" />');</script>
+    <link href="style.css" rel="stylesheet" />
+    <script data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular.js" data-require="angular.js@1.2.x"></script>
+    <script src="https://code.angularjs.org/1.2.28/angular-route.js"></script>
+    
+	<script src="RigesterationController.js"></script>
+	
+</head>
+
+<body ng-controller="Load" class="container" style="padding-top:30px">
+		<p> Student Achievements </p>
+		<div ng-repeat="x in achievements">
+			<p> {{x.name}} => {{x.score}} </p>
+			
+		</div>
+		
+		<form action="CoursesPage.html" method="get">
+ 	<br><br>
+	<input type="submit" name="Show Courses" value="Show Courses" />
+	</form>
+	
+	<form action="PlayGameForm.html" method="get">
+	<br><br>
+	<input type="submit" name="Play Game" value="Play Game">
+	</form>
+		
+	
+</body>
+</html>

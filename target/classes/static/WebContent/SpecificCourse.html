@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="phase2">
+
+<head>
+<title>Games Form Page</title>
+<script>document.write('<base href="' + document.location + '" />');</script>
+    <link href="style.css" rel="stylesheet" />
+    <script data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular.js" data-require="angular.js@1.2.x"></script>
+    <script src="https://code.angularjs.org/1.2.28/angular-route.js"></script>
+	<script src="SpecificCourseController.js"></script>
+</head>
+
+<body >
+<center>		
+		
+<p>Enter Course Name :	<input type="text"  name="UserName" id ="CName"  required /> </p>
+		
+		<div ng-controller="ShowGames">
+		<br><br>
+		<input type="button" name="Show Games" value="Show Games" ng-click="saveGames()" />
+		</div>
+		
+	<form action="PlayGameForm.html" method="get">
+	<br><br>
+	<input type="submit" name="Play Game" value="Play Game">
+	</form>
+</center>
+</body>
+</html>

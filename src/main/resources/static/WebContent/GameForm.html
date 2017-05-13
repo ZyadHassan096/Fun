@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="phase2">
+
+<head>
+<title>Game Form Page</title>
+<script>document.write('<base href="' + document.location + '" />');</script>
+    <link href="style.css" rel="stylesheet" />
+    <script data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular.js" data-require="angular.js@1.2.x"></script>
+    <script src="https://code.angularjs.org/1.2.28/angular-route.js"></script>
+	<script src="GameFormController.js"></script>
+</head>
+<body >
+
+<center>
+
+
+<p>Enter Your Email :	<input type="text"  name="Email" id ="email" required /> </p>
+<p>Enter Game Name  :	<input type="text"  name="GameName" id ="GameName" required/> </p>
+<p>Enter Course Name:	<input type="text"  name="CourseName" id ="CourseName" required/> </p>
+<form id="GameSchema">
+<p>Choose Schema    :  TF<input type="radio" name="GameSchema" value="TF" checked/> 
+					   MCQ<input type="radio" name="GameSchema" value="MCQ" /> </p>
+</form>
+
+<div ng-app="phase2" >
+	<div ng-controller="AddGame">
+		<input type="button" name="Write Question" value="Write Question" ng-click="save()" />
+	</div>
+</div>
+</center>
+</body>
+</html>

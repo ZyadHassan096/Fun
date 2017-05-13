@@ -1,0 +1,4 @@
+Math	TF	Addition
+Science	MCQ	PeriodicTable
+math	TF	Subtraction
+math	TF	MultiPlication

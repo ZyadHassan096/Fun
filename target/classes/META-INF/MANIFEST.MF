@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: Phase2
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Zyad Hassan
+Implementation-Vendor-Id: Funlero
+Build-Jdk: 1.8.0_111
+Implementation-URL: http://projects.spring.io/spring-boot/Phase2/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

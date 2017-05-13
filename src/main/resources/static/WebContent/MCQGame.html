@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="phase2">
+
+<head>
+<title>MCQ Game Page</title>
+<script>document.write('<base href="' + document.location + '" />');</script>
+    <link href="style.css" rel="stylesheet" />
+    <script data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular.js" data-require="angular.js@1.2.x"></script>
+    <script src="https://code.angularjs.org/1.2.28/angular-route.js"></script>
+	<script src="PlayGameController.js"></script> 
+</head>
+<body >
+
+<center>
+
+	<div ng-controller="LoadMCQ">
+		<div ng-repeat="x in MCQQuestions track by $index" ng-show="$index == indexToShow">
+   			 Question      : {{x.Question}} ?? <br>
+   			 a : {{x.FirstChoice}}  <br>
+   			 b : {{x.SecondChoice}}  <br>
+   			 c : {{x.ThirdChoice}}  <br>
+   			 d : {{x.FourthChoice}}  <br>
+   			 
+   			 Your Answer :  <input type="text" name="Answer" id ="answer{{$index}}" /><br>
+   			 <button ng-click="change()">Answer</div>
+  		</div>
+  		
+		
+		
+	</div>
+</center>
+</body>
+</html>

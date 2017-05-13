@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="phase2">
+
+<head>
+<title>Log In Page</title>
+<script>document.write('<base href="' + document.location + '" />');</script>
+    <link href="style.css" rel="stylesheet" />
+    <script data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular.js" data-require="angular.js@1.2.x"></script>
+    <script src="https://code.angularjs.org/1.2.28/angular-route.js"></script>
+    
+    <script src="RigesterationController.js"></script>
+</head>
+<body >
+
+<center>
+
+<p>Enter Your Email :	<input type="text"  name="Email" id ="email" required /> </p>
+<p>Enter Your Password :	<input type="password"  name="pass" id ="Pass" required/> </p>
+<div ng-app="phase2" >
+	<div ng-controller="LogIn">
+		<input type="button" name="Log In" value="Log In" ng-click="saveData()" />
+	</div>
+</div>
+	<form action="SignUpPage.html" method="get">
+	<br><br>
+	 <input type="submit" name="Register" value="Register" /> new User ?
+	</form>
+</center>
+</body>
+</html>

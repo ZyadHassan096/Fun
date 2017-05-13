@@ -1,0 +1,3 @@
+MCQ	RemoveTwoAnswers	50
+MCQ	ShowAnswer	100
+TF	ShowAnswer	100

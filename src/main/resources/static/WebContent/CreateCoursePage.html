@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="phase2">
+
+<head>
+<title>Course Page</title>
+<script>document.write('<base href="' + document.location + '" />');</script>
+    <link href="style.css" rel="stylesheet" />
+    <script data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular.js" data-require="angular.js@1.2.x"></script>
+    <script src="https://code.angularjs.org/1.2.28/angular-route.js"></script>
+	<script src="CourseController.js"></script> 
+</head>
+<body >
+
+<center>
+
+<p>Enter Your Course Name :	<input type="text" , name="CourseName" id ="CName"  required /> </p>
+<p>Enter Your Course ID :	<input type="text" , name="CourseID" id ="CID" required /> </p>
+<p>Enter Your Name :	<input type="text" , name="TeacherName" id ="TeacherName" required/> </p>
+
+	<div ng-controller="CreateCourse">
+		<input type="button" name="Create" value="Create" ng-click="save()" />
+	</div>
+</center>
+</body>
+</html>

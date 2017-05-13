@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="phase2">
+
+<head>
+<title>Play Game Page</title>
+<script>document.write('<base href="' + document.location + '" />');</script>
+    <link href="style.css" rel="stylesheet" />
+    <script data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular.js" data-require="angular.js@1.2.x"></script>
+    <script src="https://code.angularjs.org/1.2.28/angular-route.js"></script>
+	<script src="PlayGameController.js"></script> 
+</head>
+<body >
+
+<center>
+
+<p>Enter Your Game Name :	<input type="text"  name="GameName" id ="GName"  required /> </p>
+	<div ng-controller="PlayGame">
+	<br><br>
+		<input type="button" name="Play" value="Play" ng-click="save()" />
+	</div>
+</center>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="phase2">
+
+<head>
+<title>Games Page</title>
+<script>document.write('<base href="' + document.location + '" />');</script>
+    <link href="style.css" rel="stylesheet" />
+    <script data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular.js" data-require="angular.js@1.2.x"></script>
+    <script src="https://code.angularjs.org/1.2.28/angular-route.js"></script>
+	<script src="SpecificCourseController.js"></script>
+</head>
+
+<body ng-controller="LoadGames" class="container" style="padding-top:30px">
+<center>				
+		<p>Games :</p>
+		<div ng-repeat="y in Games">
+		
+			<p>{{ y.GameName }} - {{ y.Schema }}</p>
+			
+		</div>
+</center>
+</body>
+</html>

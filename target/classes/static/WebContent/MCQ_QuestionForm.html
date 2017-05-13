@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="phase2">
+
+<head>
+<title>MCQ Question Page</title>
+<script>document.write('<base href="' + document.location + '" />');</script>
+    <link href="style.css" rel="stylesheet" />
+    <script data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular.js" data-require="angular.js@1.2.x"></script>
+    <script src="https://code.angularjs.org/1.2.28/angular-route.js"></script>
+	<script src="GameFormController.js"></script>
+</head>
+<body >
+
+<center>
+
+
+<p>Enter Question      :	<input type="text"  name="Question" id ="Question" required /> </p>
+<p>Enter First  Choice :	(a)<input type="text"  name="FirstChoice" id ="FirstChoice" required/> </p>
+<p>Enter Second Choice :	(b)<input type="text"  name="SecondChoice" id ="SecondChoice" required/> </p>
+<p>Enter Third  Choice :	(c)<input type="text"  name="ThirdChoice" id ="ThirdChoice" required/> </p>
+<p>Enter Fourth Choice :	(d)<input type="text"  name="FourthChoice" id ="FourthChoice" required/> </p>
+<p>Enter The Answer    :	<input type="text"  name="Answer" id ="Answer" required/> </p>
+
+<div ng-controller="Load">
+	<div ng-controller="AddMCQ_Question">
+		<input type="button" name="Add Another Question" value="Add Another Question" ng-click="send(GameName)" />
+	</div>
+	<div ng-controller="Finish">
+	<br><br>
+		<input type="button" name="Finish" value="Finish" ng-click="finish(GameName)" />
+	</div>
+</div>
+</center>
+</body>
+</html>
